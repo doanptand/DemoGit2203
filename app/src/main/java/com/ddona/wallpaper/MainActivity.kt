@@ -3,6 +3,7 @@ package com.ddona.wallpaper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ddona.wallpaper.databinding.ActivityMainBinding
+import com.ddona.wallpaper.fragments.DetailWallpaperFragment
 import com.ddona.wallpaper.fragments.WallpaperFragment
 
 class MainActivity : AppCompatActivity() {
@@ -14,5 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        if (currentFragment == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.content, DetailWallpaperFragment())
+                .commit()
+        }
     }
 }
