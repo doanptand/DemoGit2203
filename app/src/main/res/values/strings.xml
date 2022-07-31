@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Wallpaper</string>
+    <string name="transition_name">ShareElement</string>
+    <string name="set_as_wallpaper">Set as wallpaper</string>
+    <string name="success">Success!!</string>
+    <string name="press_again_to_quit">Press again to quit!</string>
+
+    <string name="rate_thank_for_use_app">Thank you!</string>
+    <string name="rate_please_rate_app">Please give us a review</string>
+    <string name="rate_later">Later</string>
+    <string name="rate_accept">Rate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
