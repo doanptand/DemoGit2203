@@ -14,10 +14,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        if (currentFragment == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.content, WallpaperFragment())
-                .commit()
-        }
     }
 }
